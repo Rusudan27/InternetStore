@@ -24,7 +24,7 @@ logs
 !.env.example
 
 # Ignore demo files in fonts
-assets/fonts/demo.*
+assets/fonts/demo.html
 
 # Stylelint cache
 .stylelintcache

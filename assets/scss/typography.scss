@@ -1,0 +1,56 @@
+@use "@/assets/scss/variables" as *;
+
+
+	.typography--h1-display {
+  font-family: $font-family-display;
+  font-size: $font-size-xxl;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-large;
+  text-transform: $text-transform-uppercase;
+}
+
+.typography--h2-display {
+		font-family: $font-family-display;
+		font-size: $font-size-xl;
+		font-style: normal;
+		font-weight: $font-weight-regular;
+		line-height: $line-height-loose; 
+		text-transform: $text-transform-uppercase;
+	}
+
+.typography--h3-body {
+		font-family: $font-family-body;
+		font-size: $font-size-lg;
+		font-style: normal;
+		font-weight: $font-weight-small;
+		line-height: $line-height-mediuml; 
+		text-transform: $text-transform-uppercase;
+		}
+
+.typography--p1-display {
+			font-family: $font-family-display;
+			font-size: $font-size-m;
+			font-style: normal;
+			font-weight: $font-weight-regular;
+			line-height: $line-height-tight; 
+			text-transform: $text-transform-uppercase;
+		}
+
+	.typography--p2-body {
+			font-family: $font-family-body;
+			font-size: $font-size-s;
+			font-style: normal;
+			font-weight: $font-weight-regular;
+			line-height: $line-height-medium; 
+		}
+
+	.typography--p3-body {
+			font-family: $font-family-body;
+			font-size: $font-size-xs;
+			font-style: normal;
+			font-weight: $font-weight-regular;
+			line-height: $line-height-small; 
+		}
+
+

@@ -1,22 +1,21 @@
 <template>
   <div class="layout">
     <MainHeader />
-    <NuxtPage />
+    <NuxtPage  class="layout__page"/>
+	 <MainFooter />
   </div>
 </template>
 
-<script setup>
-</script>
 
 <style lang="scss">
-body {
-  background-color: $black;
-  margin: 0;
-  padding: 0;
-}
-
 .layout {
-  min-height: 100vh;
-  background-color: $black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100vh;
+
+  &__page{
+		flex-grow: 1;
+  }
 }
 </style>
