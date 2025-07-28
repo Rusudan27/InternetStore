@@ -5,6 +5,7 @@
         <span class="header__inner-logo-title">Rocket</span>
         <span class="header__inner-logo-subtitle">Store</span>
       </div>
+
       <div class="header__right">
         <div class="header__right-search">
           <SvgoSearch class="header__right-search-icon" />
@@ -14,6 +15,7 @@
             placeholder=""
           />
         </div>
+
         <nav class="header__nav">
           <NuxtLink
             v-for="item in navLinks"
@@ -27,6 +29,7 @@
     </div>
   </header>
 </template>
+
 
 <script setup lang="ts">
 import SvgoUser from '@/assets/icons/user.svg'
@@ -77,11 +80,11 @@ const navLinks = [
       align-items: center;
 
       &-title {
-        font-family: $font-family-display;
-        font-size: $font-size-s;
+        font-family: $Righteous;
+        font-size: $s;
         line-height: 100%;
         letter-spacing: 0.5px;
-        text-transform: $text-transform-uppercase;
+        text-transform: uppercase;
         color: $white;
 
         @include breakpoint((pad, down)) {
@@ -90,11 +93,11 @@ const navLinks = [
       }
 
       &-subtitle {
-        font-family: $font-family-body;
-        font-size: $font-size-xxs;
-        font-weight: $font-weight-regular;
+        font-family: $Raleway;
+        font-size: $xxs;
+        font-weight: $regular;
         letter-spacing: 7.58px;
-        text-transform: $text-transform-uppercase;
+        text-transform: uppercase;
         color: $white;
         width: fit-content;
 
@@ -148,13 +151,13 @@ const navLinks = [
         border: none;
         background: transparent;
         outline: none;
-        font-size: $font-size-xs;
-        font-family: $font-family-body;
+        font-size: $xs;
+        font-family: $Raleway;
         padding: 35px;
         color: $white;
 
         @include breakpoint((pad, down)) {
-          font-size: $font-size-xxs;
+          font-size: $xxs;
           padding: 0;
         }
       }
@@ -183,6 +186,7 @@ const navLinks = [
   }
 }
 </style>
+
 
 
 

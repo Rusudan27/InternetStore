@@ -3,38 +3,35 @@ $white: rgba(249, 249, 249, 1);
 $green: rgba(213, 255, 64, 1);  
 $purple: rgba(122, 0, 209, 1);  
 $grey: rgba(255, 255, 255, 0.20);
-$grey2:  rgba(249, 249, 249, 0.20);
+$lightgrey:  rgba(249, 249, 249, 0.20);
 
 //Font-family
-$font-family-display: 'Righteous', sans-serif;
-$font-family-body: 'Raleway', sans-serif;
+$Righteous: 'Righteous', sans-serif;
+$Raleway: 'Raleway', sans-serif;
 
 //Font-size
-$font-size-xxs: 12px;
-$font-size-xs: 14px;
-$font-size-xss: 15px;
-$font-size-xm: 16px;
-$font-size-s: 20px;
-$font-size-m: 21px;
-$font-size-md: 30px;
-$font-size-lg: 90px;
-$font-size-xl: 150px;
-$font-size-xxl: 228px;
+$xxs: 12px;
+$xs: 14px;
+$xss: 15px;
+$xm: 16px;
+$s: 20px;
+$m: 21px;
+$md: 30px;
+$lg: 90px;
+$xl: 150px;
+$xxl: 228px;
 
 // Font Weights
-$font-weight-small:100;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
+$small:100;
+$regular: 400;
+$medium: 500;
+$bold: 700;
 
-// Text Transform
-$text-transform-uppercase: uppercase;
-$text-transform-none: none;
 
 // Line Heights
-$line-height-small: 20px;
-$line-height-tight: 25px;
-$line-height-medium: 30px;
-$line-height-mediuml: 100px;
-$line-height-loose: 150px;
-$line-height-large: 170px;
+$small: 20px;
+$tight: 25px;
+$medium: 30px;
+$mediuml: 100px;
+$loose: 150px;
+$large: 170px;
