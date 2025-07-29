@@ -18,7 +18,7 @@
     </div>
 
     <div class="footer__right">
-      <NuxtLink to="#" class="footer__right-account typography-p1">
+      <NuxtLink to="/user" class="footer__right-account typography-p1">
         My account
       </NuxtLink>
 
@@ -35,18 +35,19 @@
 </template>
 
 <script setup lang="ts">
+import type { RouteLocationRaw } from 'vue-router';
 
 interface FooterLink {
   id: string;
   label: string;
-  to: string;
+  to: RouteLocationRaw;
 }
 
 const footerRightLinks: FooterLink[] = [
   { id: 'login', label: 'Log in', to: '/login' },
   { id: 'registration', label: 'Registration', to: '/registration' },
   { id: 'basket', label: 'Shopping basket', to: '/basket' },
-  { id: 'favourites', label: 'Favourites', to: '/favourites' },
+  { id: 'favourites', label: 'Favourites', to: '/saved' },
 ];
 
 </script>
@@ -60,15 +61,11 @@ const footerRightLinks: FooterLink[] = [
   align-items: flex-start;
   gap: 16px;
   width: 100%;
-  height: 350px;
   padding: 40px 20px 10px;
   background: $lightgrey;
 
   @include breakpoint((pad, down)) {
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
     height: auto;
     padding: 30px 16px;
     gap: 32px;
@@ -77,7 +74,6 @@ const footerRightLinks: FooterLink[] = [
 
   &__rights {
     color: $white;
-    margin-top: 100px;
     letter-spacing: 1.2px;
   }
 
@@ -97,10 +93,6 @@ const footerRightLinks: FooterLink[] = [
 
     &-contact {
       margin-top: 10px;
-    }
-
-    &-info {
-      letter-spacing: 1px;
     }
 
     &-icons {
@@ -130,6 +122,7 @@ const footerRightLinks: FooterLink[] = [
     align-items: center;
     text-align: center;
     flex: none;
+	 gap: 100px;
 
     @include breakpoint((pad, down)) {
       width: 100%;
@@ -157,10 +150,9 @@ const footerRightLinks: FooterLink[] = [
   }
 
   &__right {
-    flex: none;
-    max-width: 200px;
     margin-right: 105px;
     margin-top: 15px;
+	 color: $white;
 
     @include breakpoint((pad, down)) {
       margin: 0;
@@ -169,14 +161,9 @@ const footerRightLinks: FooterLink[] = [
       align-items: center;
     }
 
-    &-account {
-      color: $white;
-    }
-
     &-component {
       display: flex;
       flex-direction: column;
-      color: $white;
       margin-top: 23px;
     }
   }

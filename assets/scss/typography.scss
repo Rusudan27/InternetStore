@@ -4,7 +4,7 @@
 .typography {
   &-h1 {
     font-family: $Righteous;
-    font-size: $xxl;
+    font-size: $font-size-g;
     font-style: normal;
     font-weight: $regular;
     line-height: $large;
@@ -22,7 +22,7 @@
 
   &-h2 {
     font-family: $Righteous;
-    font-size: $xl;
+    font-size: $font-size-l;
     font-style: normal;
     font-weight: $regular;
     line-height: $loose;
@@ -40,7 +40,7 @@
 
   &-h3 {
     font-family: $Raleway;
-    font-size: $lg;
+    font-size: $font-size-xl;
     font-style: normal;
     font-weight: $small;
     line-height: $mediuml;
@@ -58,7 +58,7 @@
 
   &-p1 {
     font-family: $Righteous;
-    font-size: $m;
+    font-size: $font-size-m;
     font-style: normal;
     font-weight: $regular;
     line-height: $tight;
@@ -66,7 +66,7 @@
 
     @include breakpoint((pad, down)) {
       font-family: $Righteous;
-      font-size: $xm;
+      font-size: $font-size-xxm;
       font-style: normal;
       font-weight: $regular;
       line-height: $small;
@@ -76,14 +76,14 @@
 
   &-p2 {
     font-family: $Raleway;
-    font-size: $s;
+    font-size: $font-size-xm;
     font-style: normal;
     font-weight: $regular;
     line-height: $medium;
 
     @include breakpoint((pad, down)) {
       font-family: $Raleway;
-      font-size: $xss;
+      font-size: $font-size-s;
       font-style: normal;
       font-weight: $regular;
       line-height: $small;
@@ -92,7 +92,7 @@
 
   &-p3 {
     font-family: $Raleway;
-    font-size: $xs;
+    font-size: $font-size-xs;
     font-style: normal;
     font-weight: $regular;
     line-height: $small;

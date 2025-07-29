@@ -40,7 +40,7 @@ const navLinks = [
   { to: '/user', icon: SvgoUser },
   { to: '/saved', icon: SvgoSaved },
   { to: '/basket', icon: SvgoBasket }
-]
+] as const;
 
 </script>
 
@@ -81,7 +81,7 @@ const navLinks = [
 
       &-title {
         font-family: $Righteous;
-        font-size: $s;
+        font-size: $font-size-xm;
         line-height: 100%;
         letter-spacing: 0.5px;
         text-transform: uppercase;
@@ -94,12 +94,11 @@ const navLinks = [
 
       &-subtitle {
         font-family: $Raleway;
-        font-size: $xxs;
+        font-size: $font-size-s;
         font-weight: $regular;
         letter-spacing: 7.58px;
         text-transform: uppercase;
         color: $white;
-        width: fit-content;
 
         @include breakpoint((pad, down)) {
           font-size: 7px;
@@ -137,7 +136,6 @@ const navLinks = [
         top: 5px;
         width: 30px;
         height: 30px;
-        color: $black;
         stroke: $white;
 
         @include breakpoint((pad, down)) {
@@ -151,14 +149,12 @@ const navLinks = [
         border: none;
         background: transparent;
         outline: none;
-        font-size: $xs;
+        font-size: $font-size-xs;
         font-family: $Raleway;
-        padding: 35px;
         color: $white;
 
         @include breakpoint((pad, down)) {
-          font-size: $xxs;
-          padding: 0;
+          font-size: $font-size-xxs;
         }
       }
     }
