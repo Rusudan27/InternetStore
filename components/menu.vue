@@ -27,9 +27,8 @@ const menuLinks = [
 @use "@/assets/scss/breakpoints" as *;
 
 .selection-menu {
-  display: inline-flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   gap: 81px;
   color: $white;
   margin-top: 140px;
@@ -41,8 +40,7 @@ const menuLinks = [
   }
 
   &__link {
-    display: inline-flex;
-    align-items: center;
+	 align-items: center;
 
     @include breakpoint((pad, down)) {
       flex-direction: column;
@@ -53,6 +51,7 @@ const menuLinks = [
     width: 15px;
     height: 15px;
     margin-left: 10px;
+ 
 
     @include breakpoint((pad, down)) {
       width: 12px;
