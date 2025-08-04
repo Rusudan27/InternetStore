@@ -4,8 +4,8 @@
 
 <style lang="scss">
 	body {
-	background-color: $black;
-	margin: 0;
-	padding: 0;
+		background-color: $black;
+		margin: 0;
+		padding: 0;
 	}
 </style>
