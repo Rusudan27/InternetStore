@@ -37,22 +37,24 @@
         </ul>
       </div>
     </div>
+
+	 <div class="home-page__container">
+	 <SaleCard  />
+
+	 </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import SvgoNike from '@/assets/icons/nike.svg';
-import SvgoObey from '@/assets/icons/obey.svg';
-import SvgoCarhartt from '@/assets/icons/carhartt.svg';
-import SvgoAdidasSeeklogo from '@/assets/icons/adidas-seeklogo.svg';
-import SvgoPuma from '@/assets/icons/puma.svg';
-import SvgoReebok from '@/assets/icons/reebok.svg';
+import { SaleCard } from '#components';
+
 </script>
 
 <style scoped lang="scss">
 @use "@/assets/scss/breakpoints" as *;
 
 .home-page {
+	width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +64,12 @@ import SvgoReebok from '@/assets/icons/reebok.svg';
 
   @include breakpoint((pad, down)) {
     padding: 48px 16px;
+  }
+
+  &__container {
+	width: 100%;
+	max-width: 1300px;
+	padding: 0 70px;
   }
 
   &__title {
