@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+	<NuxtLayout />
 </template>
+
+<style lang="scss">
+	body {
+		background-color: $black;
+		margin: 0;
+		padding: 0;
+	}
+</style>
